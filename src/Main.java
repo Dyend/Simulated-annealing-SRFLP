@@ -11,13 +11,12 @@ public class Main {
         int size = srflp.getProblemSize();
         double temperatura = 100000;
         double temperaturaMin = 0.2;
-        double enfriamiento = 0.3;
+        double enfriamiento = 0.9;
         /** fin parametros*/
 
 
         SimulatedAnnealing simulatedAnnealing = new SimulatedAnnealing();
 
-        System.out.println("Run 1");
         simulatedAnnealing.search(srflp,size,temperatura,temperaturaMin,enfriamiento,null);
 
 
